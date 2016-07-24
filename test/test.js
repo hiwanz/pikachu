@@ -4,11 +4,11 @@ var app = require('../app/index');
 var request = require('supertest').agent(app.listen());
 
 describe('GET /', function () {
-    it('status code should be 200', function (done) {
-        request
-            .get('/')
-            .expect(200, done);
-    });
+  it('status code should be 200', function (done) {
+    request
+      .get('/')
+      .expect(200, done);
+  });
 });
 
 describe('GET user id from params', function () {
