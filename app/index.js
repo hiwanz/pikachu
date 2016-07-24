@@ -1,15 +1,14 @@
 var Koa = require('koa'),
-    config = require('./config'),
-    views = require('koa-views'),
-    Router = require('koa-router'),
-    controller = require('./controllers'),
-    setUp = require('./routes');
+  config = require('./config'),
+  views = require('koa-views'),
+  Router = require('koa-router'),
+  controller = require('./controllers'),
+  setUp = require('./routes');
 
 
 var app = module.exports = new Koa();
 
 // logger
-
 app.use((ctx, next) => {
   const start = new Date;
   return next().then(() => {
@@ -22,7 +21,8 @@ app.use((ctx, next) => {
 app.use(
   views(config.template.path, config.template.options)
 );
-// set up app actions with routes
-setUp(app,new Router,controller);
+
+// set up actions with routes
+setUp(app, new Router, controller);
 
 app.listen(config.server.port);

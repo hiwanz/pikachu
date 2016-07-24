@@ -1,9 +1,9 @@
-module.exports = function (app,router,action) {
+module.exports = function (app, router, action) {
   // set up routes
   router
     .get('/', action.index)
 
-    .get('/users/:id', (ctx, next) => {
+    .get('/users/:id', (ctx) => {
       ctx.body = ctx.params.id;
     });
 
