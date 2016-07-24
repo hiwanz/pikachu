@@ -6,12 +6,20 @@
   "directories": {
     "test": "test"
   },
+  "homepage": "https://github.com/hiwanz/pikachu.git",
+  "author": {
+    "name": "hiwanz",
+    "email": "princeb4d@gmail.com",
+    "url": "https://github.com/hiwanz"
+  },
+  "repository": "https://github.com/hiwanz/pikachu.git",
   "dependencies": {
     "ect": "^0.5.9",
     "koa": "^2.0.0",
     "koa-bodyparser": "^3.1.0",
     "koa-router": "^7.0.1",
-    "koa-views": "^5.0.2"
+    "koa-views": "^5.0.2",
+    "waterline": "^0.12.2"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
@@ -23,9 +31,9 @@
   },
   "keywords": [
     "Koa2",
+    "Pikachu",
     "Boilerplate",
     "Webapp"
   ],
-  "author": "hiwanz",
   "license": "MIT"
 }
