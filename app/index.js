@@ -1,6 +1,8 @@
 var Koa = require('koa'),
-    views = require('koa-views'),
     config = require('./config'),
+    views = require('koa-views'),
+    Router = require('koa-router'),
+    controller = require('./controllers'),
     setUp = require('./routes');
 
 
@@ -20,7 +22,7 @@ app.use((ctx, next) => {
 app.use(
   views(config.template.path, config.template.options)
 );
-// set up app with router
-setUp(app);
+// set up app actions with routes
+setUp(app,new Router,controller);
 
 app.listen(config.server.port);

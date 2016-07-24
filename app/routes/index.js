@@ -1,11 +1,8 @@
-module.exports = function (app) {
-  var Router = require('koa-router'),
-      ctrl = require('../controllers/index');
-
-  var router = new Router();
-
+module.exports = function (app,router,action) {
+  // set up routes
   router
-    .get('/', ctrl.index)
+    .get('/', action.index)
+
     .get('/users/:id', (ctx, next) => {
       ctx.body = ctx.params.id;
     });
