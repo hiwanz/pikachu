@@ -1,7 +1,7 @@
-Pikachu
+Pikachu [![Build Status](https://travis-ci.org/hiwanz/pikachu.svg?branch=master)](https://travis-ci.org/hiwanz/pikachu)
 ===========
 
-A Koa2 app boilerplate. 
+A Koa v2 app boilerplate. 
 
 quick start
 =============
@@ -42,10 +42,11 @@ Components
 
 Pikachu uses following npm package : 
 
-* `koa-router` for request routing purpose.
-* `koa-views` for template switching.
-* `koa-bodyparser` A body parser for koa, base on co-body. support json, form and text type body.
-* `ect` Performance focused JavaScript template engine with embedded CoffeeScript syntax.
+* [koa-router](https://github.com/alexmingoia/koa-router) - Router middleware for koa.
+* [koa-views](https://github.com/queckezz/koa-views) - Template rendering middleware for koa.
+* [koa-bodyparser](https://github.com/koajs/bodyparser) - A body parser for koa, base on co-body. support json, form and text type body.
+* [ect](https://github.com/baryshev/ect) - Performance focused JavaScript template engine with embedded CoffeeScript syntax.
+* [waterline](https://github.com/balderdashy/waterline) - An adapter-based ORM for Node.js with support for mysql, mongo, postgres, redis, and more
 
 License
 =========
