@@ -1,4 +1,4 @@
-Pikachu [![Build Status](https://travis-ci.org/hiwanz/pikachu.svg?branch=master)](https://travis-ci.org/hiwanz/pikachu)
+Pikachu [![Build Status](https://travis-ci.org/hiwanz/pikachu.svg?branch=master)](https://travis-ci.org/hiwanz/pikachu) [![Dependency Status](https://david-dm.org/hiwanz/pikachu.svg)](https://david-dm.org/hiwanz/pikachu)
 ===========
 
 A Koa v2 app boilerplate. 
