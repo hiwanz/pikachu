@@ -42,6 +42,7 @@ Components
 
 Pikachu uses following npm package : 
 
+* [koa-static](https://github.com/koajs/static) - Koa static file serving middleware, wrapper for koa-send.
 * [koa-router](https://github.com/alexmingoia/koa-router) - Router middleware for koa.
 * [koa-views](https://github.com/queckezz/koa-views) - Template rendering middleware for koa.
 * [koa-bodyparser](https://github.com/koajs/bodyparser) - A body parser for koa, base on co-body. support json, form and text type body.
