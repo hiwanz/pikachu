@@ -1,4 +1,5 @@
 var Koa = require('koa'),
+  serve = require('koa-static'),
   config = require('./config'),
   views = require('koa-views'),
   Router = require('koa-router'),
@@ -16,6 +17,9 @@ app.use((ctx, next) => {
     console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
   });
 });
+
+// static file serving
+app.use(serve('./static'));
 
 // initialize render helper,must be used before any router is used
 app.use(
