@@ -52,4 +52,4 @@ Pikachu uses following npm package :
 License
 =========
 
-The Pikachu is licensed under the [MIT License](http://opensource.org/licenses/MIT)
+The Pikachu is licensed under the [MIT License](LICENSE.md)
