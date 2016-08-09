@@ -18,3 +18,11 @@ describe('GET user id from params', function () {
       .expect('1024', done);
   });
 });
+
+describe('GET static file', function () {
+  it('status code should be 200', function (done) {
+    request
+      .get('/notice.html')
+      .expect(200, done);
+  });
+});
