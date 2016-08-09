@@ -12,6 +12,10 @@ module.exports = {
       map: {html: 'ect'}
     }
   },
+  static_dir: {
+    root: './static',
+    options: {}
+  },
   session: {
     secretKey: 'myKoajsSecretKey'
   }

@@ -18,7 +18,7 @@ module.exports = function (app, config) {
 
   // static file serving
   app.use(
-    serve('./static')
+    serve(config.static_dir.root,config.static_dir.options)
   );
 
   // initialize render helper,must be used before any router is used
